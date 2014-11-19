@@ -19,3 +19,7 @@ allow rild audio_cutback_data_file:sock_file create_file_perms;
 allow rild audio_cutback_data_file:dir setattr;
 
 allow rild mediaserver_service:service_manager find;
+
+# Allow permissions for FSG
+allow rild fsg_file:dir search;
+allow rild fsg_file:file r_file_perms;
